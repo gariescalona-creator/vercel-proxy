@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
-  const targetUrl = 'http://gina.atwebpages.com/novedades/upload2.php';
+  const targetUrl = 'http://gjea.atwebpages.com/Novedades/upload2.php';
 
   try {
     const response = await fetch(targetUrl, {
