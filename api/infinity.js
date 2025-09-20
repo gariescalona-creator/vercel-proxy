@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Faltan datos: archivo y nombre son requeridos.' });
   }
 
-  const targetUrl = `https://novedades.gt.tc/Novedades/subir.php?archivo=${encodeURIComponent(nombre)}`;
+  const targetUrl = `https://novedades.gt.tc/subir.php?archivo=${encodeURIComponent(nombre)}`;
 
   try {
     const response = await fetch(targetUrl, {
